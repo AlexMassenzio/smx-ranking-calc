@@ -5,7 +5,7 @@
  * @param difficulty The numeric difficulty the song was played on.
  * @returns The amount of ranking earned for the given score and difficulty.
  *
- * @example Find the ranking for 90,000 points earned on a level 20 chart.
+ * @example Find the ranking for a 90,000 point score earned on a level 20 chart.
  * ```ts
  * const score = 90000;
  * const difficulty = 20;

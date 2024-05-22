@@ -1,15 +1,29 @@
 # smx-ranking-calc
 
-To install dependencies:
+A simple package for calculating ranking points in StepManiaX
+
+## Installation
 
 ```bash
-bun install
+# npm
+npx jsr add @alex-massenzio/smx-ranking-calc
+
+# bun
+bunx jsr add @alex-massenzio/smx-ranking-calc
+
+# pnpm
+pnpm dlx jsr add @alex-massenzio/smx-ranking-calc
 ```
 
-To run:
+## Usage
 
-```bash
-bun run index.ts
+```ts
+import { getRanking } from "@alex-massenzio/smx-ranking-calc";
+
+const score = 95000;
+const difficulty = 20;
+
+const rankingPoints = getRanking(score, difficulty); //36000
 ```
 
 This project was created using `bun init` in bun v1.1.9. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
